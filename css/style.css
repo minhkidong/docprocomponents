@@ -1,0 +1,20 @@
+.demo-wrapper {
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 0px 4px 4px 4px;
+}
+.demo-wrapper .demo-title {
+    overflow: hidden;
+    min-height: 40px;
+    border-bottom: 1px solid #ecf0f1;
+}
+.demo-wrapper .demo-title .left {
+    float: left;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.demo-wrapper .syntaxhighlighter {
+    margin: 0 0 0 0 !important;
+}
