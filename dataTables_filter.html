@@ -117,7 +117,7 @@
                                                                             <div class="col-md-2 DropdownFilter_item">
                                                                                 <label>
                                                                                     <select class="form-control input-sm selectpicker" data-live-search="true" name="#">
-                                                                                        <option value="">@Locate.T("Tất cả")</option>
+                                                                                        <option value="">@Locate.T("Tất cả ")</option>
                                                                                         @(new HtmlString(Utils.RenderOptions(Model.StgDocTypes, Model.SearchParam.FirstIDDoctype, false)))
                                                                                     </select>
                                                                                 </label>
@@ -129,6 +129,22 @@
                                                                                         {
                                                                                             <option @(Utils.IsAny<int>(Model.SearchParam.Members, user.ID) ? "selected" : string.Empty) value="@user.ID" data-content='<img width="30" src="@(GlobalConfig.StgSrcThumbAvatar(user.Avatar, 120, "auto"))"> <div class="option_inline"><span class="span_block">@user.Name</span> <span>@user.Email</span></div>'>@user.Name</option>
                                                                                         }
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="col-md-2 DropdownFilter_item">
+                                                                                <label>
+                                                                                    <select name="States" class="selectpicker form-control" multiple
+                                                                                            data-live-search="true"
+                                                                                            data-live-search-placeholder="@Locate.T("Tìm kiếm")"
+                                                                                            data-none-Selected-Text="@Locate.T("Trạng thái công việc")"
+                                                                                            data-multiple-separator="">
+                                                                                        <optgroup label="@Locate.T("Trạng thái công việc")">
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Todo) ? "selected" : string.Empty) value="@((int)JobStatus.Todo)" data-content="<span class='label label-default'>@Locate.T("Chưa xử lý")</span>">@Locate.T("Chưa xử lý")</option>
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Reject) ? "selected" : string.Empty) value="@((int)JobStatus.Reject)" data-content="<span class='label label-danger'>@Locate.T("Từ chối")</span>">@Locate.T("Từ chối")</option>
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Progress) ? "selected" : string.Empty) value="@((int)JobStatus.Progress)" data-content="<span class='label label-green'>@Locate.T("Đang xử lý")</span>">@Locate.T("Đang xử lý")</option>
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Done) ? "selected" : string.Empty) value="@((int)JobStatus.Done)" data-content="<span class='label label-info'>@Locate.T("Hoàn thành")</span>">@Locate.T("Hoàn thành")</option>
+                                                                                        </optgroup>
                                                                                     </select>
                                                                                 </label>
                                                                             </div>
