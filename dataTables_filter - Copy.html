@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Docpro Components</title>
+    <meta content="Docpro Components" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="stg/Assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="stg/Assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.ui.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.cscrollbar.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.jcrop.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.contextMenu.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.megaimgviewer.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.selectbox.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.bootstrap-select.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/ionicons.min.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/font-awesome.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/weather-icons.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/beyond.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/demo.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/typicons.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/animate.css" rel="stylesheet">
+    <link href="stg/Assets/beyond/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="stg/pdf/viewer.css" rel="stylesheet">
+    <link href="stg/Assets/jquery/css/jquery.stacktable.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/main.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/size.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/icons.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/upfile.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/table.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/chat.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/ntfs.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/stg.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/cust.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/structure.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/fsi.css" rel="stylesheet">
+    <link href="stg/Assets/app/css/fix_ie.css" rel="stylesheet">
+    <script src="stg/Assets/app/js/modernizr-custom.js">
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shCoreDefault.css"/>
+
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link href='css/responsive.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <!-- include HTML -->
+    <div class="include_html" data-include-html="header"></div>
+
+    <div class="main-container container-fluid">
+        <div class="page-container">
+            <!-- include HTML -->
+            <div class="include_html" data-include-html="left"></div>
+            <div class="page-content" id="Section">
+                <div class="page-body" id="SHResult">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="widget">
+                                <div class="widget-header bordered-bottom bordered-yellow">
+                                    <span class="widget-caption has-sub-caption">
+                                        <span class="widget-caption-left"><i class="fa fa-hashtag"></i></span> 
+                                        <span class="widget-caption-right">
+                                            <span class="widget-mainCaption">Widget Header</span> 
+                                        </span>
+                                    </span>
+                                    <div class="widget-buttons">
+                                        <a class="widget_back_btn text-btn" href="#" title="Quay lại"><i aria-hidden="true" class="fa fa-arrow-left"></i><span>Quay lại</span></a>
+                                        <a data-toggle="maximize" href="javascript:;"><i class="fa fa-expand"></i></a>
+                                        <a data-toggle="collapse" href="#"><i class="fa fa-minus"></i></a>
+                                        <a data-toggle="dispose" href="javascript:;"><i class="fa fa-times"></i></a>
+                                    </div>
+                                </div>
+                                    <div class="widget-body no-padding">
+                                        <div class="demo-wrapper"> <!-- HTML -->
+                                            <div class="demo-title">
+                                                <span class="left">HTML</span>
+                                            </div>
+                                            <div class="demo_content">
+                                                <pre class="brush:xml;">
+                                                    <div class="dataTables_filter"> <!-- DataTables Filter -->
+                                                        <form class="quickSearch" data-target="#" action="#" method="post" enctype="multipart/form-data">
+                                                            <div class="col-md-2 quickSearch_md">
+                                                                <label>
+                                                                    <input type="text" name="Term" class="form-control input-sm" placeholder="Tìm kiếm nhanh" aria-controls="searchable">
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-2 dataFilter_Dropdown_Section">
+                                                                <div class="dropdown dataFilter_Dropdown">
+                                                                    <button class="btn btn-default dropdown-toggle" type="button" id="dataFilter_Dropdown">
+                                                                        <i class="fa fa-sliders" aria-hidden="true"></i> Lọc
+                                                                    </button>
+                                                                </div>
+                                                                <button class="btn btn-primary" type="submit">
+                                                                    <i class="glyphicon glyphicon-search"></i> <span class="hidden-xs hidden-sm">Tìm kiếm</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="dropdown-menu dataFilter_Dropdown_target">
+                                                                <div class="dropdown-menu-content">
+                                                                    <a href="#" title="Đóng" class="dataFilter_Dropdown_close"><i class="ion-android-close"></i></a>
+                                                                    <div class="col-xs-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-2 DropdownFilter_item">
+                                                                                <label>
+                                                                                    <input type="text" value="@Utils.DateToString(Model.SearchParam.CollectedStart, "dd-MM-yyyy")" name="CollectedStart" class="form-control input-sm date" placeholder="@Locate.T("Từ ngày")" aria-controls="searchable">
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="col-md-2 DropdownFilter_item">
+                                                                                <label>
+                                                                                    <input type="text" value="@Utils.DateToString(Model.SearchParam.CollectedEnd, "dd-MM-yyyy")" name="CollectedEnd" class="form-control input-sm date" placeholder="@Locate.T("Đến ngày")" aria-controls="searchable">
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="col-md-2 DropdownFilter_item">
+                                                                                <label>
+                                                                                    <select class="form-control input-sm selectpicker" data-live-search="true" name="#">
+                                                                                        <option value="">@Locate.T("Tất cả ")</option>
+                                                                                        @(new HtmlString(Utils.RenderOptions(Model.StgDocTypes, Model.SearchParam.FirstIDDoctype, false)))
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="col-md-2 DropdownFilter_item">
+                                                                                <label class="select_filter">
+                                                                                    <select name="Members" class="selectpicker form-control" multiple data-live-search="true" data-size="5" data-live-search-placeholder="@Locate.T("Tìm kiếm")" data-none-Selected-Text="@Locate.T("Nhân lực")">
+                                                                                        @foreach (var user in Model.Users)
+                                                                                        {
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.Members, user.ID) ? "selected" : string.Empty) value="@user.ID" data-content='<img width="30" src="@(GlobalConfig.StgSrcThumbAvatar(user.Avatar, 120, "auto"))"> <div class="option_inline"><span class="span_block">@user.Name</span> <span>@user.Email</span></div>'>@user.Name</option>
+                                                                                        }
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="col-md-2 DropdownFilter_item">
+                                                                                <label>
+                                                                                    <select name="States" class="selectpicker form-control" multiple
+                                                                                            data-live-search="true"
+                                                                                            data-live-search-placeholder="@Locate.T("Tìm kiếm")"
+                                                                                            data-none-Selected-Text="@Locate.T("Trạng thái công việc")"
+                                                                                            data-multiple-separator="">
+                                                                                        <optgroup label="@Locate.T("Trạng thái công việc")">
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Todo) ? "selected" : string.Empty) value="@((int)JobStatus.Todo)" data-content="<span class='label label-default'>@Locate.T("Chưa xử lý")</span>">@Locate.T("Chưa xử lý")</option>
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Reject) ? "selected" : string.Empty) value="@((int)JobStatus.Reject)" data-content="<span class='label label-danger'>@Locate.T("Từ chối")</span>">@Locate.T("Từ chối")</option>
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Progress) ? "selected" : string.Empty) value="@((int)JobStatus.Progress)" data-content="<span class='label label-green'>@Locate.T("Đang xử lý")</span>">@Locate.T("Đang xử lý")</option>
+                                                                                            <option @(Utils.IsAny<int>(Model.SearchParam.States, (int)JobStatus.Done) ? "selected" : string.Empty) value="@((int)JobStatus.Done)" data-content="<span class='label label-info'>@Locate.T("Hoàn thành")</span>">@Locate.T("Hoàn thành")</option>
+                                                                                        </optgroup>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>  
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <div class="demo-wrapper"> <!-- CSS -->
+                                            <div class="demo-title">
+                                                <span class="left">CSS</span>
+                                            </div>
+                                            <div class="demo_content">
+                                                <pre class="brush:css;">
+/* widget */
+.widget {
+    padding: 0;
+    -webkit-box-shadow: 1px 0px 20px rgba(0,0,0,0.08) !important;
+    -moz-box-shadow: 1px 0px 20px rgba(0,0,0,0.08) !important;
+    box-shadow: 1px 0px 20px rgba(0,0,0,0.08) !important;
+}
+.widget-header.bordered-bottom {
+    border-bottom: 1px solid #eee !important;
+}
+.widget .widget-header {
+    min-height: 50px;
+}
+
+.widget .widget-header {
+    overflow: hidden;
+    height: auto;
+}
+.widget-header, .widget-body {
+    box-shadow: none !important;
+}
+.widget-header {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.widget-header {
+    text-align: center !important;
+}
+
+/* widget header */
+/* widget caption  */
+
+/* widget button */
+.widget-buttons {
+    padding-top: 9px;
+}
+
+
+
+                                                </pre>
+                                            </div>
+                                        </div> <!-- demo-wrapper -->
+                                        <div class="demo-wrapper hidden"> <!-- JS -->
+                                            <div class="demo-title">
+                                                <span class="left">JS</span>
+                                            </div>
+                                            <div class="demo_content">
+                                                <pre class="brush:js;">
+                                                               
+                                                </pre>
+                                            </div>
+                                        </div> <!-- demo-wrapper -->
+                                        <div class="demo-wrapper"> <!-- DEMO -->
+                                            <div class="demo-title">
+                                                <span class="left">DEMO</span>
+                                            </div>
+                                            <div class="demo_content">
+                                                <div class="widget">
+                                                    <div class="widget-header bordered-bottom bordered-yellow">
+                                                        <span class="widget-caption has-sub-caption">
+                                                            <span class="widget-caption-left"><i class="fa fa-folder-open"></i></span> 
+                                                            <span class="widget-caption-right">
+                                                                <span class="widget-mainCaption">Kho lưu trữ</span> 
+                                                                <span class="widget-subCaption">Có 26 tài liệu - thư mục được tìm thấy</span>
+                                                            </span>
+                                                        </span>
+                                                        <div class="widget-buttons">
+                                                            <a class="widget_back_btn text-btn hidden" href="#" title="Quay lại"><i aria-hidden="true" class="fa fa-arrow-left"></i><span>Quay lại</span></a>
+                                                            <a data-toggle="maximize" href="javascript:;"><i class="fa fa-expand"></i></a>
+                                                            <a data-toggle="collapse" href="#"><i class="fa fa-minus"></i></a>
+                                                            <a data-toggle="dispose" href="javascript:;"><i class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div> <!-- demo-wrapper -->                         
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="stg/Assets/jquery/js/jquery.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.ui.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.mousewheel.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.cscrollbar.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.jcrop.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.datetimepicker.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.contextMenu.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.dateformat.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.serializejson.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.megaimgviewer.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.jwplayer.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.selectbox.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.rating.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.bootstrap-select.js">
+    </script> 
+    <script src="stg/Assets/bootstrap/js/bootstrap.js">
+    </script> 
+    <script src="stg/pdf/compatibility.js">
+    </script> 
+    <script src="stg/pdf/l10n.js">
+    </script> 
+    <script src="stg/pdf/build/pdf.js">
+    </script> 
+    <script src="stg/pdf/viewer.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/slimscroll/jquery.slimscroll.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/validation/bootstrapValidator.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/editors/summernote/summernote.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/nestable/jquery.nestable.min.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/easypiechart/jquery.easypiechart.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/easypiechart/easypiechart-init.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/fuelux/treeview/tree-custom.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/flot/jquery.flot.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/flot/jquery.flot.resize.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/flot/jquery.flot.pie.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/flot/jquery.flot.tooltip.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/charts/flot/jquery.flot.orderBars.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/skins.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/beyond.js">
+    </script> 
+    <script src="stg/Assets/beyond/js/toastr/toastr.js">
+    </script> 
+    <script src="stg/Assets/jquery/js/jquery.stacktable.js">
+    </script> 
+    <script src="stg/Assets/app/js/autocomplete.js">
+    </script> 
+    <script src="stg/Assets/app/js/utils.js">
+    </script> 
+    <script src="stg/Assets/app/js/main.js">
+    </script> 
+    <script src="stg/Assets/app/js/uploader.js">
+    </script> 
+    <script src="stg/Assets/app/js/upfile.js">
+    </script> 
+    <script src="stg/Assets/app/js/tree.js">
+    </script> 
+    <script src="stg/Assets/app/js/avatar.js">
+    </script> 
+    <script src="stg/Assets/app/js/stgfile.js">
+    </script> 
+    <script src="stg/Assets/app/js/scan.js">
+    </script> 
+    <script src="stg/Assets/app/js/doc.note.js">
+    </script> 
+    <script src="stg/Assets/app/js/base64.js">
+    </script> 
+    <script src="stg/Assets/app/js/vgcaplugin.js">
+    </script> 
+    <script src="stg/Assets/app/js/cks.js">
+    </script> 
+    <script src="stg/Assets/app/js/test.js">
+    </script> 
+    <script src="stg/Assets/app/js/cust.js">
+    </script> 
+    <script src="stg/Assets/app/js/check-ie-version.js">
+    </script>
+    <script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.config.stripBrs = false; /*SyntaxHighlighter.config.tagName = "pre";*/ 
+        SyntaxHighlighter.defaults["gutter"] = true; 
+        SyntaxHighlighter.all();
+    </script>
+    
+    <script src='Include/header.js' type='text/javascript'></script>
+    <script src='Include/left.js' type='text/javascript'></script>
+
+    <script src='js/main.js' type='text/javascript'></script>
+
+</body>
+</html>
